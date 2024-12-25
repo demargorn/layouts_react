@@ -8,16 +8,14 @@ const CardsView = ({ layout, cards }) => {
    const layoutClasses = getLayoutClasses(layout);
 
    function renderCards(cards) {
-      return cards.map((card, i) => {
-         return (
-            <div className={layoutClasses} key={`card-${i}`}>
-               {card}
-            </div>
-         );
-      });
+      return cards.map((card, i) => (
+         <div className={layoutClasses} key={`card-${i}`}>
+            {card}
+         </div>
+      ));
    }
 
-   return <div className='row'>{renderCards(cards)}</div>
+   return <div className='row'>{renderCards(cards)}</div>;
 };
 
 export default CardsView;

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import App from './components/App';
 import './styles.css';
 
-
 const products = [
    {
       name: 'Nike Metcon 1',
@@ -52,6 +51,6 @@ const cardsLayout = {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
    <StrictMode>
-      <App layout={cardsLayout} products={products} />,
+      <App layout={cardsLayout} products={products} />
    </StrictMode>
 );

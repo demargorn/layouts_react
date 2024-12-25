@@ -10,7 +10,6 @@ const ShopCard = ({ title, caption, img, price }) => {
                <img src={img} alt={title} />
             </figure>
          </div>
-
          <div className='cta'>
             <div className='price'>{price}</div>
             <Button label='Add to cart' />
